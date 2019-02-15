@@ -20,4 +20,11 @@ describe('taxi fee', function () {
         let expect_string = '7';
         expect(expect_string).to.equal(result);
     })
+    it('return txai fee (2 km < distance <= 8 km, waitTime = 0)',function(){
+        let distance = 8;
+        let waitTime = 0;
+        let result = main(distance,waitTime);
+        let expect_string = '11';
+        expect(expect_string).to.equal(result);
+    })    
 });
