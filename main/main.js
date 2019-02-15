@@ -1,5 +1,5 @@
 module.exports = function main(distance, waitTime) {
-    if(distance <= 2){
-        return ""+6;
-    }    
+    let disFee = 6;
+    let timeFee = 0.25*waitTime;
+    return ""+Math.round(disFee+timeFee);
 };
